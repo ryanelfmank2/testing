@@ -1,0 +1,2111 @@
+{
+    "Edmx": {
+       "script": [
+          "// Catch errors if signal is already set by user agent or other extension try { Object.defineProperty(navigator, 'globalPrivacyControl', { value: false, enumerable: true }) // Remove script tag after execution document.currentScript.parentElement.removeChild(document.currentScript) } catch (e) {}",
+          "try { Object.defineProperty(screen, \"availTop\", { value: 0 }); } catch (e) {} try { Object.defineProperty(screen, \"availLeft\", { value: 0 }); } catch (e) {} try { Object.defineProperty(screen, \"availWidth\", { value: 1920 }); } catch (e) {} try { Object.defineProperty(screen, \"availHeight\", { value: 1200 }); } catch (e) {} try { Object.defineProperty(screen, \"colorDepth\", { value: 24 }); } catch (e) {} try { Object.defineProperty(screen, \"pixelDepth\", { value: 24 }); } catch (e) {} try { Object.defineProperty(navigator, \"keyboard\", { value: undefined }); } catch (e) {} try { Object.defineProperty(navigator, \"hardwareConcurrency\", { value: 8 }); } catch (e) {} try { Object.defineProperty(navigator, \"deviceMemory\", { value: 8 }); } catch (e) {} try { Object.defineProperty(navigator, \"webkitTemporaryStorage\", { value: undefined }); } catch (e) {} try { Object.defineProperty(navigator, \"webkitPersistentStorage\", { value: undefined }); } catch (e) {} try { Object.defineProperty(navigator, \"appVersion\", { value: \"5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Brave Chrome/83.0.4103.116 Safari/537.36\" }); } catch (e) {} try { Object.defineProperty(navigator, \"doNotTrack\", { value: null }); } catch (e) {} navigator.getBattery = function getBattery () { let battery = {\"charging\":true,\"chargingTime\":0,\"dischargingTime\":null,\"level\":1} try { Object.defineProperty(battery, 'onchargingchange', { enumerable: true, configurable: false, writable: false, value: undefined }) } catch (e) {} try { Object.defineProperty(battery, 'onchargingtimechange', { enumerable: true, configurable: false, writable: false, value: undefined }) } catch (e) {} try { Object.defineProperty(battery, 'ondischargingtimechange', { enumerable: true, configurable: false, writable: false, value: undefined }) } catch (e) {} try { Object.defineProperty(battery, 'onlevelchange', { enumerable: true, configurable: false, writable: false, value: undefined }) } catch (e) {} battery.addEventListener = function addEventListener () { return } return Promise.resolve(battery) } try { window.screenY = -3 } catch (e) { } try { window.screenTop = -3 } catch (e) { } try { window.top.window.outerHeight = window.screen.height } catch (e) { } try { window.screenX = 967 } catch (e) { } try { window.screenLeft = 967 } catch (e) { } try { window.top.window.outerWidth = window.screen.width } catch (e) { }"
+       ],
+       "DataServices": {
+          "Schema": {
+             "EntityType": [
+                {
+                   "Key": {
+                      "PropertyRef": {
+                         "_Name": "DisplayName"
+                      }
+                   },
+                   "Property": [
+                      {
+                         "_Name": "DisplayName",
+                         "_Type": "Edm.String",
+                         "_Nullable": "false"
+                      },
+                      {
+                         "_Name": "FullPath",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Name",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "ParentDisplayName",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "ParentFullPath",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "ParentName",
+                         "_Type": "Edm.String"
+                      }
+                   ],
+                   "_Name": "com_K2_System_Authoring_SmartObject_Folder"
+                },
+                {
+                   "Key": {
+                      "PropertyRef": {
+                         "_Name": "ID"
+                      }
+                   },
+                   "Property": [
+                      {
+                         "_Name": "ID",
+                         "_Type": "Edm.Int64",
+                         "_Nullable": "false"
+                      },
+                      {
+                         "_Name": "AllocatedUser",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "SerialNumber",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "EventInstanceName",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "ProcessInstanceFolio",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "EventInstanceStartDate",
+                         "_Type": "Edm.DateTimeOffset"
+                      },
+                      {
+                         "_Name": "Status",
+                         "_Type": "Edm.String"
+                      }
+                   ],
+                   "_Name": "com_K2_System_Workspace_SmartObject_WorklistItem"
+                },
+                {
+                   "Key": {
+                      "PropertyRef": {
+                         "_Name": "Categories"
+                      }
+                   },
+                   "Property": [
+                      {
+                         "_Name": "Categories",
+                         "_Type": "Edm.String",
+                         "_Nullable": "false"
+                      },
+                      {
+                         "_Name": "Deployed",
+                         "_Type": "Edm.DateTimeOffset"
+                      },
+                      {
+                         "_Name": "DeployedBy",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Description",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "DisplayName",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Guid",
+                         "_Type": "Edm.Guid"
+                      },
+                      {
+                         "_Name": "Name",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Version",
+                         "_Type": "Edm.Int64"
+                      },
+                      {
+                         "_Name": "SmartObjectResultRow____SmartObjectResultRow___",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "DeployedByDisplayName",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "IsSmartBox",
+                         "_Type": "Edm.Boolean"
+                      },
+                      {
+                         "_Name": "IsEmpty",
+                         "_Type": "Edm.Boolean"
+                      },
+                      {
+                         "_Name": "ResultCount",
+                         "_Type": "Edm.Int64"
+                      },
+                      {
+                         "_Name": "Created",
+                         "_Type": "Edm.DateTimeOffset"
+                      },
+                      {
+                         "_Name": "CreatedBy",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "CreatedByDisplayName",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "IsSystem",
+                         "_Type": "Edm.Boolean"
+                      }
+                   ],
+                   "_Name": "com_K2_System_SmartObjects_SmartObject_SmartObjectInfo"
+                },
+                {
+                   "Key": {
+                      "PropertyRef": {
+                         "_Name": "Category_Id"
+                      }
+                   },
+                   "Property": [
+                      {
+                         "_Name": "Category_Id",
+                         "_Type": "Edm.Int64",
+                         "_Nullable": "false"
+                      },
+                      {
+                         "_Name": "Name",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Type",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Count",
+                         "_Type": "Edm.Int64"
+                      }
+                   ],
+                   "_Name": "com_K2_System_Management_SmartObject_GetCategoryItemCounts"
+                },
+                {
+                   "Key": {
+                      "PropertyRef": {
+                         "_Name": "ObjectId"
+                      }
+                   },
+                   "Property": [
+                      {
+                         "_Name": "ObjectId",
+                         "_Type": "Edm.String",
+                         "_Nullable": "false"
+                      },
+                      {
+                         "_Name": "Account",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "AccountEnabled",
+                         "_Type": "Edm.Boolean"
+                      },
+                      {
+                         "_Name": "City",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Country",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Department",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "DisplayName",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "FacsimileTelephoneNumber",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "ForceChangePasswordNextLogin",
+                         "_Type": "Edm.Boolean"
+                      },
+                      {
+                         "_Name": "GivenName",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "JobTitle",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Mail",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "MailNickname",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "ManagerId",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Mobile",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Password",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "PasswordPolicies",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "PhysicalDeliveryOfficeName",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "PostalCode",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "PreferredLanguage",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "State",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "StreetAddress",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Surname",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "TelephoneNumber",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "ThumbnailPhoto",
+                         "_Type": "Edm.Stream"
+                      },
+                      {
+                         "_Name": "UsageLocation",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "UserPrincipalName",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Succeeded",
+                         "_Type": "Edm.Boolean"
+                      },
+                      {
+                         "_Name": "StatusMessage",
+                         "_Type": "Edm.String"
+                      }
+                   ],
+                   "_Name": "AAD_User_Management_User"
+                },
+                {
+                   "Key": {
+                      "PropertyRef": {
+                         "_Name": "DisplayName"
+                      }
+                   },
+                   "Property": [
+                      {
+                         "_Name": "DisplayName",
+                         "_Type": "Edm.String",
+                         "_Nullable": "false"
+                      },
+                      {
+                         "_Name": "HasChildren",
+                         "_Type": "Edm.Boolean"
+                      },
+                      {
+                         "_Name": "Id",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Name",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "ParentCategoryId",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Type",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Guid",
+                         "_Type": "Edm.Guid"
+                      }
+                   ],
+                   "_Name": "com_K2_System_Management_SmartObject_CategoryObject"
+                },
+                {
+                   "Key": {
+                      "PropertyRef": {
+                         "_Name": "CategoryId"
+                      }
+                   },
+                   "Property": [
+                      {
+                         "_Name": "CategoryId",
+                         "_Type": "Edm.Int64",
+                         "_Nullable": "false"
+                      },
+                      {
+                         "_Name": "Data",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "DataType",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "DisplayName",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "CategoryData__CategoryData_",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "TreeIcon_ID",
+                         "_Type": "Edm.Int64"
+                      },
+                      {
+                         "_Name": "TreeIcon_Type",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "TreeIcon_Name",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Name",
+                         "_Type": "Edm.String"
+                      }
+                   ],
+                   "_Name": "com_K2_System_Management_SmartObject_CategoryData"
+                },
+                {
+                   "Key": {
+                      "PropertyRef": {
+                         "_Name": "Serialized_Item__String_"
+                      }
+                   },
+                   "Property": [
+                      {
+                         "_Name": "Serialized_Item__String_",
+                         "_Type": "Edm.String",
+                         "_Nullable": "false"
+                      },
+                      {
+                         "_Name": "Id",
+                         "_Type": "Edm.Int64"
+                      },
+                      {
+                         "_Name": "Name",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "ProcessSetID",
+                         "_Type": "Edm.Int64"
+                      },
+                      {
+                         "_Name": "ProcessSetName",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "FromDate",
+                         "_Type": "Edm.DateTimeOffset"
+                      },
+                      {
+                         "_Name": "ToDate",
+                         "_Type": "Edm.DateTimeOffset"
+                      },
+                      {
+                         "_Name": "UseClientEventCodeErrors",
+                         "_Type": "Edm.Boolean"
+                      },
+                      {
+                         "_Name": "UseDestinationRuleErrors",
+                         "_Type": "Edm.Boolean"
+                      },
+                      {
+                         "_Name": "UseEscalationActionErrors",
+                         "_Type": "Edm.Boolean"
+                      },
+                      {
+                         "_Name": "UseEscalationRuleErrors",
+                         "_Type": "Edm.Boolean"
+                      },
+                      {
+                         "_Name": "UseEventEscalationAction",
+                         "_Type": "Edm.Boolean"
+                      },
+                      {
+                         "_Name": "UseEventEscalationRule",
+                         "_Type": "Edm.Boolean"
+                      },
+                      {
+                         "_Name": "UseFromDate",
+                         "_Type": "Edm.Boolean"
+                      },
+                      {
+                         "_Name": "UseIPCErrors",
+                         "_Type": "Edm.Boolean"
+                      },
+                      {
+                         "_Name": "UsePrecedingRuleErrors",
+                         "_Type": "Edm.Boolean"
+                      },
+                      {
+                         "_Name": "UseProcessEscalationAction",
+                         "_Type": "Edm.Boolean"
+                      },
+                      {
+                         "_Name": "UseProcessEscalationRule",
+                         "_Type": "Edm.Boolean"
+                      },
+                      {
+                         "_Name": "UseProcessFinishRule",
+                         "_Type": "Edm.Boolean"
+                      },
+                      {
+                         "_Name": "UseProcessLineRuleErrors",
+                         "_Type": "Edm.Boolean"
+                      },
+                      {
+                         "_Name": "UseProcessStartRule",
+                         "_Type": "Edm.Boolean"
+                      },
+                      {
+                         "_Name": "UseServerEventCodeErrors",
+                         "_Type": "Edm.Boolean"
+                      },
+                      {
+                         "_Name": "UseStartRuleErrors",
+                         "_Type": "Edm.Boolean"
+                      },
+                      {
+                         "_Name": "UseSucceedingRuleErrors",
+                         "_Type": "Edm.Boolean"
+                      },
+                      {
+                         "_Name": "UseToDate",
+                         "_Type": "Edm.Boolean"
+                      },
+                      {
+                         "_Name": "Serialized_Array",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Serialized_List",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "ErrorProfiles",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "UseFinishRuleErrors",
+                         "_Type": "Edm.Boolean"
+                      },
+                      {
+                         "_Name": "UseThresholdRuleErrors",
+                         "_Type": "Edm.Boolean"
+                      }
+                   ],
+                   "_Name": "com_K2_System_Workflow_SmartObject_ErrorProfile"
+                },
+                {
+                   "Key": {
+                      "PropertyRef": {
+                         "_Name": "ID"
+                      }
+                   },
+                   "Property": [
+                      {
+                         "_Name": "ID",
+                         "_Type": "Edm.Guid",
+                         "_Nullable": "false"
+                      },
+                      {
+                         "_Name": "Name",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Description",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Tooltip",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "IsDefault",
+                         "_Type": "Edm.Boolean"
+                      },
+                      {
+                         "_Name": "IsSystem",
+                         "_Type": "Edm.Boolean"
+                      },
+                      {
+                         "_Name": "IsVisible",
+                         "_Type": "Edm.Boolean"
+                      },
+                      {
+                         "_Name": "IconID",
+                         "_Type": "Edm.Guid"
+                      },
+                      {
+                         "_Name": "IconName",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Icon",
+                         "_Type": "Edm.Stream"
+                      },
+                      {
+                         "_Name": "TargetTypeID",
+                         "_Type": "Edm.Guid"
+                      },
+                      {
+                         "_Name": "TargetPath",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "ForceRefresh",
+                         "_Type": "Edm.Boolean"
+                      },
+                      {
+                         "_Name": "Serialized_Item__String_",
+                         "_Type": "Edm.String"
+                      }
+                   ],
+                   "_Name": "com_K2_System_Management_Workspace_SmartObject_NavigationSchemeData"
+                },
+                {
+                   "Key": {
+                      "PropertyRef": {
+                         "_Name": "Name"
+                      }
+                   },
+                   "Property": [
+                      {
+                         "_Name": "Name",
+                         "_Type": "Edm.String",
+                         "_Nullable": "false"
+                      },
+                      {
+                         "_Name": "Type",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "DisplayName",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Count",
+                         "_Type": "Edm.Int64"
+                      }
+                   ],
+                   "_Name": "com_K2_System_SmartObjects_SmartObject_SmartPropertyInfo"
+                },
+                {
+                   "Key": {
+                      "PropertyRef": {
+                         "_Name": "ProductID"
+                      }
+                   },
+                   "Property": [
+                      {
+                         "_Name": "ProductID",
+                         "_Type": "Edm.Int64",
+                         "_Nullable": "false"
+                      },
+                      {
+                         "_Name": "Name",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "ProductNumber",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "MakeFlag",
+                         "_Type": "Edm.Boolean"
+                      },
+                      {
+                         "_Name": "FinishedGoodsFlag",
+                         "_Type": "Edm.Boolean"
+                      },
+                      {
+                         "_Name": "Color",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "SafetyStockLevel",
+                         "_Type": "Edm.Int64"
+                      },
+                      {
+                         "_Name": "ReorderPoint",
+                         "_Type": "Edm.Int64"
+                      },
+                      {
+                         "_Name": "StandardCost",
+                         "_Type": "Edm.Decimal"
+                      },
+                      {
+                         "_Name": "ListPrice",
+                         "_Type": "Edm.Decimal"
+                      },
+                      {
+                         "_Name": "Size",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "SizeUnitMeasureCode",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "WeightUnitMeasureCode",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Weight",
+                         "_Type": "Edm.Decimal"
+                      },
+                      {
+                         "_Name": "DaysToManufacture",
+                         "_Type": "Edm.Int64"
+                      },
+                      {
+                         "_Name": "ProductLine",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Class",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Style",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "ProductSubcategoryID",
+                         "_Type": "Edm.Int64"
+                      },
+                      {
+                         "_Name": "ProductModelID",
+                         "_Type": "Edm.Int64"
+                      },
+                      {
+                         "_Name": "SellStartDate",
+                         "_Type": "Edm.DateTimeOffset"
+                      },
+                      {
+                         "_Name": "SellEndDate",
+                         "_Type": "Edm.DateTimeOffset"
+                      },
+                      {
+                         "_Name": "DiscontinuedDate",
+                         "_Type": "Edm.DateTimeOffset"
+                      },
+                      {
+                         "_Name": "rowguid",
+                         "_Type": "Edm.Guid"
+                      },
+                      {
+                         "_Name": "ModifiedDate",
+                         "_Type": "Edm.DateTimeOffset"
+                      }
+                   ],
+                   "_Name": "AdventureWorks2019_Production_Product"
+                },
+                {
+                   "Key": {
+                      "PropertyRef": {
+                         "_Name": "ProductCategoryID"
+                      }
+                   },
+                   "Property": [
+                      {
+                         "_Name": "ProductCategoryID",
+                         "_Type": "Edm.Int64",
+                         "_Nullable": "false"
+                      },
+                      {
+                         "_Name": "Name",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "rowguid",
+                         "_Type": "Edm.Guid"
+                      },
+                      {
+                         "_Name": "ModifiedDate",
+                         "_Type": "Edm.DateTimeOffset"
+                      }
+                   ],
+                   "_Name": "AdventureWorks2019_Production_ProductCategory"
+                },
+                {
+                   "Key": {
+                      "PropertyRef": {
+                         "_Name": "ProcessName"
+                      }
+                   },
+                   "Property": [
+                      {
+                         "_Name": "ProcessName",
+                         "_Type": "Edm.String",
+                         "_Nullable": "false"
+                      },
+                      {
+                         "_Name": "ProcessInstanceID",
+                         "_Type": "Edm.Int64"
+                      },
+                      {
+                         "_Name": "DataName",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "DataValue",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "DataTypeId",
+                         "_Type": "Edm.Int64"
+                      }
+                   ],
+                   "_Name": "Process_Data"
+                },
+                {
+                   "Key": {
+                      "PropertyRef": {
+                         "_Name": "FQN"
+                      }
+                   },
+                   "Property": [
+                      {
+                         "_Name": "FQN",
+                         "_Type": "Edm.String",
+                         "_Nullable": "false"
+                      },
+                      {
+                         "_Name": "GroupName",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Name",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Description",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Email",
+                         "_Type": "Edm.String"
+                      }
+                   ],
+                   "_Name": "UMGroup"
+                },
+                {
+                   "Key": {
+                      "PropertyRef": {
+                         "_Name": "FQN"
+                      }
+                   },
+                   "Property": [
+                      {
+                         "_Name": "FQN",
+                         "_Type": "Edm.String",
+                         "_Nullable": "false"
+                      },
+                      {
+                         "_Name": "Name",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Description",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Email",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Manager",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Sip_Account",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "ObjectSID",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "DisplayName",
+                         "_Type": "Edm.String"
+                      }
+                   ],
+                   "_Name": "UMUser"
+                },
+                {
+                   "Key": {
+                      "PropertyRef": {
+                         "_Name": "ServiceTypeName"
+                      }
+                   },
+                   "Property": [
+                      {
+                         "_Name": "ServiceTypeName",
+                         "_Type": "Edm.String",
+                         "_Nullable": "false"
+                      },
+                      {
+                         "_Name": "ServiceInstanceName",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "ServiceInstanceSystemName",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "ServiceInstanceDisplayName",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "ServiceInstanceDescription",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "ServiceInstanceGuid",
+                         "_Type": "Edm.Guid"
+                      },
+                      {
+                         "_Name": "ServiceObjectName",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "SmartObjectGuid",
+                         "_Type": "Edm.Guid"
+                      },
+                      {
+                         "_Name": "SmartObjectName",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "SmartObjectDisplayName",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "SmartObjectDescription",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "MethodName",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "MethodDisplayName",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "MethodType",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "MethodMetadata",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "MethodExists",
+                         "_Type": "Edm.Boolean"
+                      },
+                      {
+                         "_Name": "ParentCategory",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "ParentCategoryFullPath",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "FilterMethodName",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "MethodDefinitionXml",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "MethodPropertiesType",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "MethodPropertiesXml",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "MethodPropertiesToExclude",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "SmartObjectValue",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "SmartObjectExist",
+                         "_Type": "Edm.Boolean"
+                      },
+                      {
+                         "_Name": "MethodPropertyName",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "MethodPropertyDisplayName",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "MethodPropertyType",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "IgnoreIfDefaultLoadFound",
+                         "_Type": "Edm.Boolean"
+                      },
+                      {
+                         "_Name": "ReturnOnlyKeys",
+                         "_Type": "Edm.Boolean"
+                      },
+                      {
+                         "_Name": "ServiceTypes",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "ServiceObjectTypes",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "ServiceObjectNames",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "ReturnDefaultLoadProperties",
+                         "_Type": "Edm.Boolean"
+                      }
+                   ],
+                   "_Name": "SmartObject_Service_Functions"
+                },
+                {
+                   "Key": {
+                      "PropertyRef": {
+                         "_Name": "Description"
+                      }
+                   },
+                   "Property": [
+                      {
+                         "_Name": "Description",
+                         "_Type": "Edm.String",
+                         "_Nullable": "false"
+                      },
+                      {
+                         "_Name": "DisplayName",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Name",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "ServiceTypeGuid",
+                         "_Type": "Edm.Guid"
+                      },
+                      {
+                         "_Name": "ServiceInstanceGuid",
+                         "_Type": "Edm.Guid"
+                      },
+                      {
+                         "_Name": "ServiceAuthenticationInfo__ServiceAuthenticationInfo_",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "SettingKeys__SettingKeyInfo___",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Success",
+                         "_Type": "Edm.Boolean"
+                      },
+                      {
+                         "_Name": "ServiceTypeDisplayName",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "ServiceFolderObjectXml",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "ServiceObject____ServiceObject___",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "CreateNew",
+                         "_Type": "Edm.Boolean"
+                      },
+                      {
+                         "_Name": "UpdateExisting",
+                         "_Type": "Edm.Boolean"
+                      },
+                      {
+                         "_Name": "DeleteRemoved",
+                         "_Type": "Edm.Boolean"
+                      },
+                      {
+                         "_Name": "UnConfigurableServiceInstances",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "IsServiceInstanceNameUnique",
+                         "_Type": "Edm.Boolean"
+                      },
+                      {
+                         "_Name": "GeneratedInstanceName",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "AuthenticateWithServiceAccount",
+                         "_Type": "Edm.Boolean"
+                      },
+                      {
+                         "_Name": "UnRefreshableServiceInstances",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "UnConfigurableServiceTypes",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Detail",
+                         "_Type": "Edm.String"
+                      }
+                   ],
+                   "_Name": "SmartObjects_Management_ServiceInstance"
+                },
+                {
+                   "Key": {
+                      "PropertyRef": {
+                         "_Name": "ID"
+                      }
+                   },
+                   "Property": [
+                      {
+                         "_Name": "ID",
+                         "_Type": "Edm.Int64",
+                         "_Nullable": "false"
+                      },
+                      {
+                         "_Name": "String1",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "String2",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Num1",
+                         "_Type": "Edm.Int64"
+                      }
+                   ],
+                   "_Name": "TB_TestODATA_Smartbox2"
+                },
+                {
+                   "Key": {
+                      "PropertyRef": {
+                         "_Name": "JobCandidateID"
+                      }
+                   },
+                   "Property": [
+                      {
+                         "_Name": "JobCandidateID",
+                         "_Type": "Edm.Int64",
+                         "_Nullable": "false"
+                      },
+                      {
+                         "_Name": "BusinessEntityID",
+                         "_Type": "Edm.Int64"
+                      },
+                      {
+                         "_Name": "Name_Prefix",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Name_First",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Name_Middle",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Name_Last",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Name_Suffix",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Skills",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Addr_Type",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Addr_Loc_CountryRegion",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Addr_Loc_State",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Addr_Loc_City",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Addr_PostalCode",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "EMail",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "WebSite",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "ModifiedDate",
+                         "_Type": "Edm.DateTimeOffset"
+                      }
+                   ],
+                   "_Name": "TB_SQLDB_AdventureDB"
+                },
+                {
+                   "Key": {
+                      "PropertyRef": {
+                         "_Name": "ID"
+                      }
+                   },
+                   "Property": [
+                      {
+                         "_Name": "ID",
+                         "_Type": "Edm.Int64",
+                         "_Nullable": "false"
+                      },
+                      {
+                         "_Name": "String",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Number",
+                         "_Type": "Edm.Int64"
+                      },
+                      {
+                         "_Name": "Datetime",
+                         "_Type": "Edm.DateTimeOffset"
+                      },
+                      {
+                         "_Name": "Decimal",
+                         "_Type": "Edm.Decimal"
+                      },
+                      {
+                         "_Name": "Memo",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Bool",
+                         "_Type": "Edm.Boolean"
+                      }
+                   ],
+                   "_Name": "TB_OdataTEST_Smartbox"
+                },
+                {
+                   "Key": {
+                      "PropertyRef": {
+                         "_Name": "Account"
+                      }
+                   },
+                   "Property": [
+                      {
+                         "_Name": "Account",
+                         "_Type": "Edm.String",
+                         "_Nullable": "false"
+                      },
+                      {
+                         "_Name": "Account_Enabled",
+                         "_Type": "Edm.Boolean"
+                      },
+                      {
+                         "_Name": "City",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Country",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Department",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Display_Name",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Facsimile_Telephone_Number",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Given_Name",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Job_Title",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Mail",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Mail_Nickname",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Mobile",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Object_Id",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Physical_Delivery_Office_Name",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Postal_Code",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Preferred_Language",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "State",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Street_Address",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Surname",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "TelephoneNumber",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Usage_Location",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "User_Principal_Name",
+                         "_Type": "Edm.String"
+                      }
+                   ],
+                   "_Name": "TB_TestAdvanceSMO"
+                },
+                {
+                   "Key": {
+                      "PropertyRef": {
+                         "_Name": "ID"
+                      }
+                   },
+                   "Property": [
+                      {
+                         "_Name": "ID",
+                         "_Type": "Edm.Int64",
+                         "_Nullable": "false"
+                      },
+                      {
+                         "_Name": "Customer_Name",
+                         "_Type": "Edm.String"
+                      }
+                   ],
+                   "_Name": "JT_Customers"
+                },
+                {
+                   "Key": {
+                      "PropertyRef": {
+                         "_Name": "ID"
+                      }
+                   },
+                   "Property": [
+                      {
+                         "_Name": "ID",
+                         "_Type": "Edm.Int64",
+                         "_Nullable": "false"
+                      },
+                      {
+                         "_Name": "FirstName",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "LastName",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "DoB",
+                         "_Type": "Edm.DateTimeOffset"
+                      }
+                   ],
+                   "_Name": "OdataTestNS"
+                },
+                {
+                   "Key": {
+                      "PropertyRef": {
+                         "_Name": "ID"
+                      }
+                   },
+                   "Property": [
+                      {
+                         "_Name": "ID",
+                         "_Type": "Edm.Int64",
+                         "_Nullable": "false"
+                      }
+                   ],
+                   "_Name": "Blah2"
+                },
+                {
+                   "Key": {
+                      "PropertyRef": {
+                         "_Name": "ID"
+                      }
+                   },
+                   "Property": [
+                      {
+                         "_Name": "ID",
+                         "_Type": "Edm.Int64",
+                         "_Nullable": "false"
+                      },
+                      {
+                         "_Name": "Name",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Description",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Email",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Manager",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "DisplayName",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "FQN",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "UserName",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Sip_Account",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Object_SID",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "LabelName",
+                         "_Type": "Edm.String"
+                      }
+                   ],
+                   "_Name": "Blah"
+                },
+                {
+                   "Key": {
+                      "PropertyRef": {
+                         "_Name": "DepartmentId"
+                      }
+                   },
+                   "Property": [
+                      {
+                         "_Name": "DepartmentId",
+                         "_Type": "Edm.Int64",
+                         "_Nullable": "false"
+                      },
+                      {
+                         "_Name": "DepartmentName",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "DepartmentManager",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Name",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Description",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Email",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Manager",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "DisplayName",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "FQN",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "UserName",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Sip_Account",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Object_SID",
+                         "_Type": "Edm.String"
+                      }
+                   ],
+                   "_Name": "Blah3"
+                },
+                {
+                   "Key": {
+                      "PropertyRef": {
+                         "_Name": "ID"
+                      }
+                   },
+                   "Property": [
+                      {
+                         "_Name": "ID",
+                         "_Type": "Edm.Int64",
+                         "_Nullable": "false"
+                      },
+                      {
+                         "_Name": "File",
+                         "_Type": "Edm.Stream"
+                      },
+                      {
+                         "_Name": "Image",
+                         "_Type": "Edm.Stream"
+                      },
+                      {
+                         "_Name": "Text",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Date",
+                         "_Type": "Edm.DateTimeOffset"
+                      },
+                      {
+                         "_Name": "DateTime",
+                         "_Type": "Edm.DateTimeOffset"
+                      },
+                      {
+                         "_Name": "Decimal",
+                         "_Type": "Edm.Decimal"
+                      },
+                      {
+                         "_Name": "GUID",
+                         "_Type": "Edm.Guid"
+                      },
+                      {
+                         "_Name": "Memo",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Number",
+                         "_Type": "Edm.Int64"
+                      },
+                      {
+                         "_Name": "Time",
+                         "_Type": "Edm.TimeOfDay"
+                      },
+                      {
+                         "_Name": "YesNo",
+                         "_Type": "Edm.Boolean"
+                      }
+                   ],
+                   "_Name": "Basic_SMO_with_all_types"
+                },
+                {
+                   "Key": {
+                      "PropertyRef": {
+                         "_Name": "ID"
+                      }
+                   },
+                   "Property": [
+                      {
+                         "_Name": "ID",
+                         "_Type": "Edm.Guid",
+                         "_Nullable": "false"
+                      },
+                      {
+                         "_Name": "CustomerName",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "CustomerId",
+                         "_Type": "Edm.Int64"
+                      },
+                      {
+                         "_Name": "OrderDate",
+                         "_Type": "Edm.DateTimeOffset"
+                      },
+                      {
+                         "_Name": "ProductId",
+                         "_Type": "Edm.Int64"
+                      },
+                      {
+                         "_Name": "ProductName",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "ProductQty",
+                         "_Type": "Edm.Int64"
+                      },
+                      {
+                         "_Name": "OrderAmount",
+                         "_Type": "Edm.Decimal"
+                      },
+                      {
+                         "_Name": "ProcId",
+                         "_Type": "Edm.Int64"
+                      },
+                      {
+                         "_Name": "ViewFlow",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Originator",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "OrderStatus",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "OrderCompleted",
+                         "_Type": "Edm.Boolean"
+                      }
+                   ],
+                   "_Name": "JT_Customers_Orders"
+                },
+                {
+                   "Key": {
+                      "PropertyRef": {
+                         "_Name": "Serialized_Item__String_"
+                      }
+                   },
+                   "Property": [
+                      {
+                         "_Name": "Serialized_Item__String_",
+                         "_Type": "Edm.String",
+                         "_Nullable": "false"
+                      },
+                      {
+                         "_Name": "Error",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Result",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Serialized_Array",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Serialized_List",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "HttpResponseCode",
+                         "_Type": "Edm.Int64"
+                      }
+                   ],
+                   "_Name": "Gc_JT_Customers_SAP"
+                },
+                {
+                   "Key": {
+                      "PropertyRef": {
+                         "_Name": "ID"
+                      }
+                   },
+                   "Property": [
+                      {
+                         "_Name": "ID",
+                         "_Type": "Edm.Int64",
+                         "_Nullable": "false"
+                      },
+                      {
+                         "_Name": "Name",
+                         "_Type": "Edm.String"
+                      }
+                   ],
+                   "_Name": "SImple2"
+                },
+                {
+                   "Key": {
+                      "PropertyRef": {
+                         "_Name": "ProductId"
+                      }
+                   },
+                   "Property": [
+                      {
+                         "_Name": "ProductId",
+                         "_Type": "Edm.Int64",
+                         "_Nullable": "false"
+                      },
+                      {
+                         "_Name": "ProductName",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Description",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "ProductNumber",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Cost",
+                         "_Type": "Edm.Decimal"
+                      },
+                      {
+                         "_Name": "ListPrice",
+                         "_Type": "Edm.Decimal"
+                      },
+                      {
+                         "_Name": "Discontinued",
+                         "_Type": "Edm.Boolean"
+                      },
+                      {
+                         "_Name": "AverageRating",
+                         "_Type": "Edm.Int64"
+                      },
+                      {
+                         "_Name": "ImageURL",
+                         "_Type": "Edm.String"
+                      }
+                   ],
+                   "_Name": "TestByMS"
+                },
+                {
+                   "Key": {
+                      "PropertyRef": {
+                         "_Name": "ID"
+                      }
+                   },
+                   "Property": [
+                      {
+                         "_Name": "ID",
+                         "_Type": "Edm.Int64",
+                         "_Nullable": "false"
+                      },
+                      {
+                         "_Name": "Name",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Address",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "MobileNumber",
+                         "_Type": "Edm.Int64"
+                      }
+                   ],
+                   "_Name": "TestByMS1"
+                },
+                {
+                   "Key": {
+                      "PropertyRef": {
+                         "_Name": "ID"
+                      }
+                   },
+                   "Property": [
+                      {
+                         "_Name": "ID",
+                         "_Type": "Edm.Int64",
+                         "_Nullable": "false"
+                      },
+                      {
+                         "_Name": "Member",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Ranking",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Score",
+                         "_Type": "Edm.Int64"
+                      },
+                      {
+                         "_Name": "Division",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "FeesPaid",
+                         "_Type": "Edm.Boolean"
+                      },
+                      {
+                         "_Name": "Birthday",
+                         "_Type": "Edm.DateTimeOffset"
+                      }
+                   ],
+                   "_Name": "Andre_Docs"
+                },
+                {
+                   "Key": {
+                      "PropertyRef": {
+                         "_Name": "User_ID"
+                      }
+                   },
+                   "Property": [
+                      {
+                         "_Name": "User_ID",
+                         "_Type": "Edm.String",
+                         "_Nullable": "false"
+                      },
+                      {
+                         "_Name": "First_Name",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Last_Name",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Email",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "License_ID",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Valid_From",
+                         "_Type": "Edm.DateTimeOffset"
+                      },
+                      {
+                         "_Name": "Valid_Until",
+                         "_Type": "Edm.DateTimeOffset"
+                      },
+                      {
+                         "_Name": "Status",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Http_Code",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "SerializedString",
+                         "_Type": "Edm.String"
+                      }
+                   ],
+                   "_Name": "TB_JSSP_USerInfo"
+                },
+                {
+                   "Key": {
+                      "PropertyRef": {
+                         "_Name": "ID"
+                      }
+                   },
+                   "Property": [
+                      {
+                         "_Name": "ID",
+                         "_Type": "Edm.Int64",
+                         "_Nullable": "false"
+                      },
+                      {
+                         "_Name": "FirstName",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "LastName",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "HireDate",
+                         "_Type": "Edm.DateTimeOffset"
+                      },
+                      {
+                         "_Name": "DepartmentCode",
+                         "_Type": "Edm.Int64"
+                      },
+                      {
+                         "_Name": "Joblevel",
+                         "_Type": "Edm.String"
+                      }
+                   ],
+                   "_Name": "EmployeeSample"
+                },
+                {
+                   "Key": {
+                      "PropertyRef": {
+                         "_Name": "ID"
+                      }
+                   },
+                   "Property": [
+                      {
+                         "_Name": "ID",
+                         "_Type": "Edm.Int64",
+                         "_Nullable": "false"
+                      },
+                      {
+                         "_Name": "Text",
+                         "_Type": "Edm.String"
+                      },
+                      {
+                         "_Name": "Date",
+                         "_Type": "Edm.DateTimeOffset"
+                      },
+                      {
+                         "_Name": "DateTIme",
+                         "_Type": "Edm.DateTimeOffset"
+                      },
+                      {
+                         "_Name": "Decimal",
+                         "_Type": "Edm.Decimal"
+                      },
+                      {
+                         "_Name": "Image",
+                         "_Type": "Edm.Stream"
+                      }
+                   ],
+                   "_Name": "Japie001"
+                }
+             ],
+             "Function": {
+                "Parameter": {
+                   "_Name": "EntitySet",
+                   "_Type": "Edm.String",
+                   "_Nullable": "false"
+                },
+                "ReturnType": {
+                   "_Type": "Edm.String",
+                   "_Nullable": "false"
+                },
+                "_Name": "MethodList"
+             },
+             "EntityContainer": {
+                "EntitySet": [
+                   {
+                      "_Name": "com_K2_System_Authoring_SmartObject_Folder",
+                      "_EntityType": "K2SmartObjects.com_K2_System_Authoring_SmartObject_Folder"
+                   },
+                   {
+                      "_Name": "com_K2_System_Workspace_SmartObject_WorklistItem",
+                      "_EntityType": "K2SmartObjects.com_K2_System_Workspace_SmartObject_WorklistItem"
+                   },
+                   {
+                      "_Name": "com_K2_System_SmartObjects_SmartObject_SmartObjectInfo",
+                      "_EntityType": "K2SmartObjects.com_K2_System_SmartObjects_SmartObject_SmartObjectInfo"
+                   },
+                   {
+                      "_Name": "com_K2_System_Management_SmartObject_GetCategoryItemCounts",
+                      "_EntityType": "K2SmartObjects.com_K2_System_Management_SmartObject_GetCategoryItemCounts"
+                   },
+                   {
+                      "_Name": "AAD_User_Management_User",
+                      "_EntityType": "K2SmartObjects.AAD_User_Management_User"
+                   },
+                   {
+                      "_Name": "com_K2_System_Management_SmartObject_CategoryObject",
+                      "_EntityType": "K2SmartObjects.com_K2_System_Management_SmartObject_CategoryObject"
+                   },
+                   {
+                      "_Name": "com_K2_System_Management_SmartObject_CategoryData",
+                      "_EntityType": "K2SmartObjects.com_K2_System_Management_SmartObject_CategoryData"
+                   },
+                   {
+                      "_Name": "com_K2_System_Workflow_SmartObject_ErrorProfile",
+                      "_EntityType": "K2SmartObjects.com_K2_System_Workflow_SmartObject_ErrorProfile"
+                   },
+                   {
+                      "_Name": "com_K2_System_Management_Workspace_SmartObject_NavigationSchemeData",
+                      "_EntityType": "K2SmartObjects.com_K2_System_Management_Workspace_SmartObject_NavigationSchemeData"
+                   },
+                   {
+                      "_Name": "com_K2_System_SmartObjects_SmartObject_SmartPropertyInfo",
+                      "_EntityType": "K2SmartObjects.com_K2_System_SmartObjects_SmartObject_SmartPropertyInfo"
+                   },
+                   {
+                      "_Name": "AdventureWorks2019_Production_Product",
+                      "_EntityType": "K2SmartObjects.AdventureWorks2019_Production_Product"
+                   },
+                   {
+                      "_Name": "AdventureWorks2019_Production_ProductCategory",
+                      "_EntityType": "K2SmartObjects.AdventureWorks2019_Production_ProductCategory"
+                   },
+                   {
+                      "_Name": "Process_Data",
+                      "_EntityType": "K2SmartObjects.Process_Data"
+                   },
+                   {
+                      "_Name": "UMGroups",
+                      "_EntityType": "K2SmartObjects.UMGroup"
+                   },
+                   {
+                      "_Name": "UMUsers",
+                      "_EntityType": "K2SmartObjects.UMUser"
+                   },
+                   {
+                      "_Name": "SmartObject_Service_Functions",
+                      "_EntityType": "K2SmartObjects.SmartObject_Service_Functions"
+                   },
+                   {
+                      "_Name": "SmartObjects_Management_ServiceInstance",
+                      "_EntityType": "K2SmartObjects.SmartObjects_Management_ServiceInstance"
+                   },
+                   {
+                      "_Name": "TB_TestODATA_Smartbox2",
+                      "_EntityType": "K2SmartObjects.TB_TestODATA_Smartbox2"
+                   },
+                   {
+                      "_Name": "TB_SQLDB_AdventureDB",
+                      "_EntityType": "K2SmartObjects.TB_SQLDB_AdventureDB"
+                   },
+                   {
+                      "_Name": "TB_OdataTEST_Smartbox",
+                      "_EntityType": "K2SmartObjects.TB_OdataTEST_Smartbox"
+                   },
+                   {
+                      "_Name": "TB_TestAdvanceSMO",
+                      "_EntityType": "K2SmartObjects.TB_TestAdvanceSMO"
+                   },
+                   {
+                      "_Name": "JT_Customers",
+                      "_EntityType": "K2SmartObjects.JT_Customers"
+                   },
+                   {
+                      "_Name": "OdataTestNS",
+                      "_EntityType": "K2SmartObjects.OdataTestNS"
+                   },
+                   {
+                      "_Name": "Blah2",
+                      "_EntityType": "K2SmartObjects.Blah2"
+                   },
+                   {
+                      "_Name": "Blahs",
+                      "_EntityType": "K2SmartObjects.Blah"
+                   },
+                   {
+                      "_Name": "Blah3",
+                      "_EntityType": "K2SmartObjects.Blah3"
+                   },
+                   {
+                      "_Name": "Basic_SMO_with_all_types",
+                      "_EntityType": "K2SmartObjects.Basic_SMO_with_all_types"
+                   },
+                   {
+                      "_Name": "JT_Customers_Orders",
+                      "_EntityType": "K2SmartObjects.JT_Customers_Orders"
+                   },
+                   {
+                      "_Name": "Gc_JT_Customers_SAP",
+                      "_EntityType": "K2SmartObjects.Gc_JT_Customers_SAP"
+                   },
+                   {
+                      "_Name": "SImple2",
+                      "_EntityType": "K2SmartObjects.SImple2"
+                   },
+                   {
+                      "_Name": "TestByMS",
+                      "_EntityType": "K2SmartObjects.TestByMS"
+                   },
+                   {
+                      "_Name": "TestByMS1",
+                      "_EntityType": "K2SmartObjects.TestByMS1"
+                   },
+                   {
+                      "_Name": "Andre_Docs",
+                      "_EntityType": "K2SmartObjects.Andre_Docs"
+                   },
+                   {
+                      "_Name": "TB_JSSP_USerInfo",
+                      "_EntityType": "K2SmartObjects.TB_JSSP_USerInfo"
+                   },
+                   {
+                      "_Name": "EmployeeSamples",
+                      "_EntityType": "K2SmartObjects.EmployeeSample"
+                   },
+                   {
+                      "_Name": "Japie001",
+                      "_EntityType": "K2SmartObjects.Japie001"
+                   }
+                ],
+                "FunctionImport": {
+                   "_Name": "MethodList",
+                   "_Function": "K2SmartObjects.MethodList"
+                },
+                "_Name": "ODataService"
+             },
+             "_xmlns": "http://docs.oasis-open.org/odata/ns/edm",
+             "_Namespace": "K2SmartObjects"
+          }
+       },
+       "_xmlns:edmx": "http://docs.oasis-open.org/odata/ns/edmx",
+       "_Version": "4.0"
+    }
+ }
